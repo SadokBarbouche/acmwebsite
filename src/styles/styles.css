@@ -1,3 +1,14 @@
-#firstdiv{
-    background-image: url("../assets/blob.svg");
+#navbar{
+    color:white;
+    background-color: #005a83;
+}
+.navbaronscroll{
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    background-color: #428bca;
+    color:black;
+}
+
+body{
+    overflow-x: hidden;
 }

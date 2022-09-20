@@ -7,17 +7,27 @@ import {
   Button,
   Image,
 } from "react-bootstrap";
+
 import Logo from "../assets/acm-logo.png";
+import "../styles/styles.css";
 
 const NavBar = () => {
+  useEffect(() => {
+    const handleScroll = (event) => {
+      window.scrollY > 0
+        ? document.getElementById("navbar").classList.add("shadow-lg")
+        : document.getElementById("navbar").classList.remove("shadow-lg");
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Navbar
-      id="navbar"
-      collapseOnSelect
-      expand="lg"
-      bg="transparent"
-      variant="transparent"
-    >
+    <Navbar id="navbar" collapseOnSelect sticky="top" expand="xxl">
       <Container className="text-light">
         <Navbar.Brand className="fs-3 fw-bolder text-dark" href="">
           <Image
@@ -28,7 +38,7 @@ const NavBar = () => {
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse id="responsive-navbar-nav" className="text-end">
           <Nav className="m-auto">
             <Nav.Link href="" className="fw-bolder text-light fs-5 me-1">
               About us
@@ -45,7 +55,7 @@ const NavBar = () => {
               id="collasible-nav-dropdown"
               className="fw-bolder text-light fs-5 me-1"
             >
-              <NavDropdown.Item href="">
+              <NavDropdown.Item className="py-3" href="">
                 CP
                 <span>
                   <svg
@@ -53,7 +63,7 @@ const NavBar = () => {
                     width="20"
                     height="20"
                     fill="currentColor"
-                    style={{float:"right"}}
+                    style={{ float: "right" }}
                     class="bi bi-file-earmark-code"
                     viewBox="0 0 16 16"
                   >
@@ -62,7 +72,7 @@ const NavBar = () => {
                   </svg>
                 </span>
               </NavDropdown.Item>
-              <NavDropdown.Item href="">
+              <NavDropdown.Item className="py-3" href="">
                 Cloud
                 <span>
                   <svg
@@ -93,16 +103,17 @@ const NavBar = () => {
           <Nav>
             <Nav.Link className="me-md-2" style={{ textDecoration: "none" }}>
               <span
-                className="text-light fs-5 "
+                className="fw-bolder text-light fs-5 "
                 style={{ textDecoration: "none" }}
               >
                 Login
               </span>
             </Nav.Link>
 
-            <Nav.Link eventKey={2} className="fs-5 fw-bolder" href="">
+            <Nav.Link eventKey={2} className="fw-bolder" href="">
               <Button
-                className="px-3 "
+                variant="primary"
+                className="px-3 fs-5"
                 style={{ backgroundColor: "#0079a9", marginTop: "-5px" }}
               >
                 Sign up
