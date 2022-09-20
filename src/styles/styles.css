@@ -1,14 +1,23 @@
-#navbar{
-    color:white;
-    background-color: #005a83;
+#navbar {
+  color: white;
+  background-color: #005a83;
 }
-.navbaronscroll{
-    transition: ease-in-out;
-    transition-duration: 0.5s;
-    background-color: #428bca;
-    color:black;
+.navbaronscroll {
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+  background-color: #428bca;
+  color: black;
 }
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
+
+.swiper-button-prev::after {
+    color:#005a83;
+    border:"1px solid black"
+  }
+  
+  .swiper-button-next::after {
+    color:#005a83;
+  }

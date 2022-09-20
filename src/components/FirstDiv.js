@@ -9,10 +9,10 @@ const FirstDiv = () => {
     <>
       <div
         style={{
+          height:"75vh",
           backgroundColor: "#005a83",
         }}
       >
-        <NavBar />
 
         <Container className="">
           <Row>
