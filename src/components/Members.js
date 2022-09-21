@@ -36,18 +36,51 @@ const Members = () => {
           className="gx-3 gy-5"
           style={{ display: "flex", justifyContent: "center" }}
         >
-          <Member person={pres} fb="#"/>
-          <Member person={vicepres} />
-          <Member person={media} />
-          <Member person={trainer} />
-          <Member person={cloudmanager} />
-          <Member person={logistics} />
-          <Member person={tresorier} />
-          <Member person={webmaster} />
-          <Member person={dalizghlmi} />
-          <Member person={mariemksntini} />
-          <Member person={joker} />
+          <Member
+            person={pres}
+            fb="https://www.facebook.com/profile.php?id=100010995991832"
+          />
+          <Member
+            person={vicepres}
+            fb="https://www.facebook.com/profile.php?id=100003928082889"
+          />
+          <Member
+            person={media}
+            fb="https://www.facebook.com/rayen.boukchina"
+          />
+          <Member
+            person={trainer}
+            fb="https://www.facebook.com/profile.php?id=100007803108885"
+          />
+          <Member
+            person={cloudmanager}
+            fb="https://www.facebook.com/oumayma.boutaleb.37"
+          />
+          <Member
+            person={logistics}
+            fb="https://www.facebook.com/mr.daliselmi"
+          />
+          <Member
+            person={tresorier}
+            fb="https://www.facebook.com/mariem.kilani.3745"
+          />
 
+          <Member
+            person={webmaster}
+            fb="https://www.facebook.com/baha.bouali"
+          />
+          <Member
+            person={dalizghlmi}
+            fb="https://www.facebook.com/dali.zoghlami.921"
+          />
+          <Member
+            person={mariemksntini}
+            fb="https://www.facebook.com/Mariem.ksontinii"
+          />
+          <Member
+            person={joker}
+            fb="https://www.facebook.com/achraf.karboul.1"
+          />
         </Row>
       </Container>
     </div>

@@ -29,10 +29,10 @@ const SecondDiv = () => {
             Our activities
           </h1>
           <h2 className="text-center fs-5 mt-4 mb-5" style={{ color: "#ccc" }}>
-            <span className="fw-bolder fs-4">ACM INSAT STUDENT CHAPTER</span> takes
-            events to a whole new level.{" "}<br/>
-            <span className="fw-bolder fs-3" >Join us</span> and be part of the next
-            adventure.
+            <span className="fw-bolder fs-4">ACM INSAT STUDENT CHAPTER</span>{" "}
+            takes events to a whole new level. <br />
+            <span className="fw-bolder fs-3">Join us</span> and be part of the
+            next adventure.
           </h2>
         </Fade>
 

@@ -4,7 +4,7 @@ import Logo from "../assets/acm-logo.png";
 import facebook from "../assets/facebookfooter.svg";
 import instagram from "../assets/instagramfooter.svg";
 import linkedin from "../assets/linkedinfooter.svg";
-
+import mail from "../assets/gmail.svg";
 const Footer = () => {
   return (
     <>
@@ -64,6 +64,10 @@ const Footer = () => {
               <a href="" className="me-2" style={{ textDecoration: "none" }}>
                 {" "}
                 <Image src={instagram} style={{ margin: "2px" }} />
+              </a>
+              <a href="" className="me-2" style={{ textDecoration: "none" }}>
+                {" "}
+                <Image src={mail} style={{ margin: "2px" }} />
               </a>
             </div>
             <br/>

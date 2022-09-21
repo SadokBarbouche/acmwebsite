@@ -20,7 +20,13 @@ const ThirdDiv = () => {
           <p className="display-1 text-center fw-bolder text-light mb-2">
             Our Workshops
           </p>
-          <p style={{color:"rgb(204, 204, 204)",}} className="fs-4 fw-bolder mb-5">We offer high quality workshops</p>
+          <p
+            style={{ color: "rgb(204, 204, 204)" }}
+            className="fs-4 fw-bolder mb-5"
+          >
+            We offer high quality and instructive workshops. We enjoy sharing
+            our expertise with you.
+          </p>
         </Slide>
         <Fade>
           <Row
@@ -53,7 +59,6 @@ const ThirdDiv = () => {
               </Zoom>
             </Col>
             <Col
-          
               md={5}
               className="workshop me-md-5 py-3 text-center"
               style={{
@@ -62,7 +67,6 @@ const ThirdDiv = () => {
                 backgroundColor: "rgb(0, 121, 169)",
               }}
             >
-              
               <Flip left>
                 <Image src={cloud} fluid className="w-75" />
               </Flip>

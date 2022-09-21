@@ -26,19 +26,19 @@ const Member = (props) => {
             alignContent: "center",
           }}
         >
-          <a href={props.fb} style={{ textDecoration: "none" }}>
+          <a href={props.fb} target="blank" style={{ textDecoration: "none" }}>
             <Image src={facebook} style={{ margin: "2px",color:"" }} />{" "}
           </a>
-          <a href={props.linkedin} style={{ textDecoration: "none" }}>
+          <a href={props.linkedin} target="blank" style={{ textDecoration: "none" }}>
             <Image src={linkedin} style={{ margin: "2px" }} />
           </a>
-          <a href={props.insta} style={{ textDecoration: "none" }}>
+          <a href={props.insta} target="blank" style={{ textDecoration: "none" }}>
             {" "}
             <Image src={instagram} style={{ margin: "2px" }} />
           </a>
-          <a href={props.gh} style={{ textDecoration: "none" }}>
+          <a href={props.gh} target="blank" style={{ textDecoration: "none" }}>
             {" "}
-            <Image src={github} style={{ margin: "2px" }} />
+            <Image src={github} target="blank" style={{ margin: "2px" }} />
           </a>
         </div>
       </Slide>
