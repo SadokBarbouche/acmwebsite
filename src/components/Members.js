@@ -17,7 +17,7 @@ import { Slide } from "react-reveal";
 
 const Members = () => {
   return (
-    <div style={{ backgroundColor: "#428bca" }} className="">
+    <div style={{ backgroundColor: "#428bca" }} id='team'>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#005a83"

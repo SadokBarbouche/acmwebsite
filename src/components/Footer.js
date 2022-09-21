@@ -5,6 +5,7 @@ import facebook from "../assets/facebookfooter.svg";
 import instagram from "../assets/instagramfooter.svg";
 import linkedin from "../assets/linkedinfooter.svg";
 import mail from "../assets/gmail.svg";
+import "../styles/styles.css";
 const Footer = () => {
   return (
     <>
@@ -31,9 +32,9 @@ const Footer = () => {
                 </Form.Group>
               </Form>
             </Col>
-            <Col className="text-sm-center text-md-end">
+            <Col className="text-center mt-xxs-2 mt-md-0">
               <Button
-                className="ms-md-5 mt-sm-3 mt-md-0 w-75 fw-bolder fs-5"
+                className="ms-md-5 mt-sm-3 mt-md-0 w-75 fw-bolder fs-5 subscribebtn"
                 style={{ backgroundColor: "rgb(0, 121, 169)" }}
               >
                 Subscribe

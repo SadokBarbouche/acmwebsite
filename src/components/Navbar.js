@@ -89,7 +89,7 @@ const NavBar = () => {
                 </span>
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="" className="fw-bolder text-light fs-5">
+            <Nav.Link href="team" className="fw-bolder text-light fs-5">
               Team
             </Nav.Link>
             <Nav.Link href="" className="fw-bolder text-light fs-5">
