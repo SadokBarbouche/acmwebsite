@@ -27,14 +27,19 @@ body {
 }
 
 .board:hover {
-  transform: scale(1.008);
+  transform: scale(1.004);
   opacity: 0.85;
 }
 
 .workshop {
-  transition-duration: 1s;  
+  transition-duration: 1s;
 }
 .workshop:hover {
-  transform: rotate(1deg);
+  transform: scale(1.004);
 }
 
+@media only screen and (max-width: 600px) {
+  .board {
+    width: 75%;
+  }
+}

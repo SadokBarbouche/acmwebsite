@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
             <br/>
           <span className="fw-bolder text-light">
-          Copyright ©2022 All rights reserved | ACM INSAT STUDENT CHAPTER
+          Copyright © 2022 ACM INSAT STUDENT CHAPTER - All rights reserved 
           </span>
           </div>
         </Container>

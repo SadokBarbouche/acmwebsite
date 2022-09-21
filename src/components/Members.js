@@ -17,7 +17,7 @@ import { Slide } from "react-reveal";
 
 const Members = () => {
   return (
-    <div style={{ backgroundColor: "#428bca" }} id='team'>
+    <div style={{ backgroundColor: "#428bca" }}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#005a83"
@@ -27,13 +27,19 @@ const Members = () => {
       </svg>
       <Container>
         <Slide right>
-          <p className="text-center display-1 fw-bolder text-light mb-5">
+          <p className="text-center display-1 fw-bolder text-light">
             Meet our executive board
           </p>
+          <p
+            style={{ color: "rgb(204, 204, 204)" }}
+            className="text-center  fs-4 fw-bolder mb-5"
+          >
+            A dedicated team of geeks seeking to make your new experience among
+            us amazing.
+          </p>
         </Slide>
-
         <Row
-          className="gx-3 gy-5"
+          className="gx-3 gy-4 text-center"
           style={{ display: "flex", justifyContent: "center" }}
         >
           <Member

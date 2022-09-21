@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { Fade, Zoom } from "react-reveal";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import act1 from "../assets/act1.jpg";
@@ -12,6 +12,7 @@ import act4 from "../assets/act4.jpg";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "../styles/styles.css";
+import "swiper/css/autoplay";
 const SecondDiv = () => {
   return (
     <div style={{ backgroundColor: "rgb(0, 121, 169)" }}>
@@ -42,8 +43,9 @@ const SecondDiv = () => {
             navigation={true}
             pagination={true}
             mousewheel={true}
+            Autoplay
             keyboard={true}
-            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard,Autoplay]}
             className="mySwiper text-center "
           >
             <SwiperSlide>
