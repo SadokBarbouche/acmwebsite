@@ -14,10 +14,30 @@ body {
 }
 
 .swiper-button-prev::after {
-    color:#005a83;
-    border:"1px solid black"
-  }
-  
-  .swiper-button-next::after {
-    color:#005a83;
-  }
+  color: #005a83;
+  border: "1px solid black";
+}
+
+.swiper-button-next::after {
+  color: #005a83;
+}
+
+.board {
+  transition-duration: 0.4s;
+}
+
+.board:hover {
+  transform: scale(1.02);
+}
+
+.workshop {
+  transition-duration: 0.4s;  
+}
+.workshop:hover {
+  transform: rotate(0.4deg);
+}
+
+body{
+  background-color: #005a83;
+  min-height: 100vh;
+}

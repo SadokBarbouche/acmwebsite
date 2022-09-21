@@ -17,19 +17,20 @@ const ThirdDiv = () => {
       </svg>
       <Container className="text-center">
         <Slide left>
-          <p className="display-1 text-center fw-bolder text-light mb-5">
+          <p className="display-1 text-center fw-bolder text-light mb-2">
             Our Workshops
           </p>
+          <p style={{color:"rgb(204, 204, 204)",}} className="fs-4 fw-bolder mb-5">We offer high quality workshops</p>
         </Slide>
         <Fade>
           <Row
-            className="gy-3 mx-0 mx-md-0"
+            className="gy-3 mx-0 mx-md-0 pb-3"
             style={{ display: "flex", justifyContent: "center" }}
           >
             <Col
               md={5}
               sm={12}
-              className="me-md-5 py-3 shadow"
+              className="workshop  me-md-5 py-3 shadow"
               style={{
                 border: "5px solid black ",
                 borderRadius: "15px",
@@ -52,14 +53,16 @@ const ThirdDiv = () => {
               </Zoom>
             </Col>
             <Col
+          
               md={5}
-              className="me-md-5 py-3 text-center"
+              className="workshop me-md-5 py-3 text-center"
               style={{
                 border: "5px solid black ",
                 borderRadius: "15px",
                 backgroundColor: "rgb(0, 121, 169)",
               }}
             >
+              
               <Flip left>
                 <Image src={cloud} fluid className="w-75" />
               </Flip>
@@ -69,8 +72,8 @@ const ThirdDiv = () => {
               </h1>
               <Zoom right>
                 <p className="px-md-4" style={{ color: "#EFEFEF" }}>
-                  Finally cloud is here! And we are eager to begin this new
-                  journey with you starting from zero to hero.
+                  Finally cloud is here ladies and gentlemen! And we are eager
+                  to begin this new journey with you starting from zero to hero.
                 </p>
               </Zoom>
             </Col>

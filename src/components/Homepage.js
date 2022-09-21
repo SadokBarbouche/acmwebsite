@@ -6,14 +6,18 @@ import FirstDiv from "./FirstDiv";
 import "../styles/styles.css";
 import SecondDiv from "./SecondDiv";
 import ThirdDiv from "./ThirdDiv";
+import Members from "./Members";
+import Footer from "./Footer";
 
 const HomePage = () => {
   return (
     <>
-      <NavBar />
+      <NavBar />  
       <FirstDiv />
       <SecondDiv />
       <ThirdDiv />
+      <Members />
+      <Footer/>
     </>
   );
 };
