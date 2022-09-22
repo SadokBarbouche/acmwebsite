@@ -43,41 +43,56 @@ const SecondDiv = () => {
             navigation={true}
             pagination={true}
             mousewheel={true}
-            Autoplay
+            autoplay={{ delay: 3000 }}
             keyboard={true}
-            modules={[Navigation, Pagination, Mousewheel, Keyboard,Autoplay]}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
             className="mySwiper text-center "
           >
             <SwiperSlide>
               <Image
                 className="w-75"
                 src={act1}
-                style={{ borderRadius: "15px", border: "5px solid black" }}
                 fluid
+                style={{
+                  border: "3px solid white ",
+                  borderRadius:"10px"
+
+                }}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 className="w-75"
                 src={act2}
-                style={{ borderRadius: "15px", border: "5px solid black" }}
                 fluid
+                style={{
+                  border: "3px solid white ",
+                  borderRadius:"10px"
+
+                }}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 className="w-75"
                 src={act3}
-                style={{ borderRadius: "15px", border: "5px solid black" }}
                 fluid
+                style={{
+                  border: "3px solid white ",
+                  borderRadius:"10px"
+
+                }}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Image
                 className="w-75"
                 src={act4}
-                style={{ borderRadius: "15px", border: "5px solid black" }}
                 fluid
+                style={{
+                  border: "3px solid white ",
+                  borderRadius:"10px"
+                }}
               />
             </SwiperSlide>
           </Swiper>

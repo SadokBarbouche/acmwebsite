@@ -55,7 +55,7 @@ const NavBar = () => {
               id="collasible-nav-dropdown"
               className="fw-bolder text-light fs-5 me-1"
             >
-              <NavDropdown.Item className="py-3" href="">
+              <NavDropdown.Item className="py-3 fw-bolder" href="" style={{}}>
                 CP
                 <span>
                   <svg
@@ -89,7 +89,7 @@ const NavBar = () => {
                 </span>
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="team" className="fw-bolder text-light fs-5">
+            <Nav.Link className="fw-bolder text-light fs-5">
               Team
             </Nav.Link>
             <Nav.Link href="" className="fw-bolder text-light fs-5">

@@ -38,7 +38,7 @@ const ThirdDiv = () => {
               sm={12}
               className="workshop  me-md-5 py-3 shadow"
               style={{
-                border: "5px solid black ",
+                border: "3px solid white ",
                 borderRadius: "15px",
                 backgroundColor: "rgb(0, 121, 169)",
               }}
@@ -62,7 +62,7 @@ const ThirdDiv = () => {
               md={5}
               className="workshop me-md-5 py-3 text-center"
               style={{
-                border: "5px solid black ",
+                border: "3px solid white ",
                 borderRadius: "15px",
                 backgroundColor: "rgb(0, 121, 169)",
               }}

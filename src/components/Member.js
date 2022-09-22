@@ -16,7 +16,7 @@ const Member = (props) => {
           className="board"
           fluid
           src={props.person}
-          style={{ border: "5px solid black", borderRadius: "50px" }}
+          style={{ border: "5px solid white", borderRadius: "30px" }}
         />
         <div
           className="text-center mt-3"
@@ -30,15 +30,7 @@ const Member = (props) => {
             <Image src={facebook} style={{ margin: "2px",color:"" }} />{" "}
           </a>
           <a href={props.linkedin} target="blank" style={{ textDecoration: "none" }}>
-            <Image src={linkedin} style={{ margin: "2px" }} />
-          </a>
-          <a href={props.insta} target="blank" style={{ textDecoration: "none" }}>
-            {" "}
-            <Image src={instagram} style={{ margin: "2px" }} />
-          </a>
-          <a href={props.gh} target="blank" style={{ textDecoration: "none" }}>
-            {" "}
-            <Image src={github} target="blank" style={{ margin: "2px" }} />
+            <Image src={linkedin} style={{ margin: "2px" }}  className="ms-1"/>
           </a>
         </div>
       </Slide>
