@@ -112,9 +112,9 @@ const NavBar = () => {
 
             <Nav.Link eventKey={2} className="fw-bolder" href="">
               <Button
-                variant="primary"
-                className="px-3 fs-5"
-                style={{ backgroundColor: "#0079a9", marginTop: "-5px" }}
+                variant="alert"
+                className="px-3 fs-5 fw-bolder"
+                style={{ backgroundColor: "#ffb703", marginTop: "-5px" ,color:"#003d5b"}}
               >
                 Sign up
               </Button>

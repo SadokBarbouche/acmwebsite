@@ -10,7 +10,7 @@ const FirstDiv = () => {
       <div
         style={{
           height:"75vh",
-          backgroundColor: "#005a83",
+          backgroundColor: "#003d5b",
         }}
       >
 

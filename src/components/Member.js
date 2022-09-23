@@ -1,10 +1,7 @@
 import React from "react";
 import { Col, Container, Image } from "react-bootstrap";
-import pres from "../assets/amenibch.jpg";
 import facebook from "../assets/facebook.svg";
-import instagram from "../assets/instagram.svg";
 import linkedin from "../assets/linkedin.svg";
-import github from "../assets/github.svg";
 import { Flip, Slide, Zoom } from "react-reveal";
 import "../styles/styles.css";
 
@@ -16,7 +13,7 @@ const Member = (props) => {
           className="board"
           fluid
           src={props.person}
-          style={{ border: "5px solid white", borderRadius: "30px" }}
+          style={{ border: "4px solid #ffb703", borderRadius: "30px" }}
         />
         <div
           className="text-center mt-3"

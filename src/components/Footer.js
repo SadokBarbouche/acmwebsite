@@ -10,10 +10,10 @@ import { Slide } from "react-reveal";
 const Footer = () => {
   return (
     <>
-      <div style={{ backgroundColor: "#005a83" }}>
+      <div style={{ backgroundColor: "#003d5b" }}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
-            fill="rgb(0, 121, 169)"
+            fill="#035294"
             fill-opacity="1"
             d="M0,128L48,117.3C96,107,192,85,288,106.7C384,128,480,192,576,197.3C672,203,768,149,864,149.3C960,149,1056,203,1152,197.3C1248,192,1344,128,1392,96L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
@@ -35,10 +35,10 @@ const Footer = () => {
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="70"
-                        height="70"
+                        width="50"
+                        height="80"
                         fill="rgb(204, 204, 204)"
-                        class="bi bi-geo-alt-fill"
+                        class="bi bi-geo-alt-fill ms-2 me-3"
                         viewBox="0 0 16 16"
                       >
                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
@@ -54,14 +54,14 @@ const Footer = () => {
                     </Col>
                     <Col
                       style={{ display: "flex" }}
-                      className="py-2 px-2 mt-3 contact"
+                      className="py-2 px-2 mt-3  contact"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="70"
-                        height="70"
+                        width="50"
+                        height="80"
                         fill="rgb(204, 204, 204)"
-                        class="bi bi-mailbox"
+                        class="bi bi-mailbox mx-2"
                         viewBox="0 0 16 16"
                       >
                         <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z" />
@@ -82,7 +82,7 @@ const Footer = () => {
               <Slide right>
                 <p className="fw-bolder fs-1">Contact us</p>
                 <Form className="text-center">
-                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                  <Form.Group className="mb-2" controlId="formBasicEmail">
                     <Form.Control type="email" placeholder="Your email" />
                   </Form.Group>
                   <Form.Control
@@ -93,9 +93,9 @@ const Footer = () => {
                   />
 
                   <Button
-                    style={{ width: "100%", border: "1px solid white" }}
-                    variant="primary"
-                    className="fw-bolder fs-6 bg-transparent"
+                    style={{ width: "100%", border: "1px solid white",backgroundColor:"#ffb703" ,color:"#003d5b"}}
+                    variant="none"
+                    className="fw-bolder fs-6 "
                     type="submit"
                   >
                     Send
@@ -105,7 +105,7 @@ const Footer = () => {
             </Col>
           </Row>
         </Container>
-        <Container style={{ backgroundColor: "#005a83" }}>
+        <Container style={{ backgroundColor: "#003d5b" }}>
           <Row className="text-md-start text-sm-center">
             <Form.Label className="fs-4 text-light fw-bolder mt-3">
               Subscribe to our newsletter
@@ -122,8 +122,9 @@ const Footer = () => {
             </Col>
             <Col className="text-center mt-xxs-2 mt-md-0">
               <Button
+                variant="none"
                 className="ms-md-5 mt-sm-3 mt-md-0 w-75 fw-bolder fs-5 subscribebtn"
-                style={{ backgroundColor: "rgb(0, 121, 169)" }}
+                style={{ backgroundColor: "#ffb703", color: "#003d5b" }}
               >
                 Subscribe
               </Button>
@@ -132,7 +133,7 @@ const Footer = () => {
 
           <div
             className="text-center pb-3"
-            style={{ backgroundColor: "#005a83" }}
+            style={{ backgroundColor: "#003d5b" }}
           >
             <Image style={{ width: "15%" }} fluid src={Logo} />
             <hr style={{ color: "white" }} />

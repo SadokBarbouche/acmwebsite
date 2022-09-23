@@ -7,10 +7,10 @@ import cloud from "../assets/cloud.svg";
 
 const ThirdDiv = () => {
   return (
-    <div style={{ backgroundColor: "rgb(0, 90, 131)" }}>
+    <div style={{ backgroundColor: "#003d5b" }}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="rgb(0, 121, 169)"
+          fill="#035294"
           fill-opacity="1"
           d="M0,64L60,106.7C120,149,240,235,360,245.3C480,256,600,192,720,144C840,96,960,64,1080,85.3C1200,107,1320,181,1380,218.7L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
         ></path>
@@ -36,11 +36,11 @@ const ThirdDiv = () => {
             <Col
               md={5}
               sm={12}
-              className="workshop  me-md-5 py-3 shadow"
+              className=" me-md-5 py-3 workshop " 
               style={{
-                border: "3px solid white ",
+                border: "1px solid #ffb703 ",
                 borderRadius: "15px",
-                backgroundColor: "rgb(0, 121, 169)",
+                backgroundColor: "#003D5B",
               }}
             >
               <Flip right>
@@ -62,9 +62,9 @@ const ThirdDiv = () => {
               md={5}
               className="workshop me-md-5 py-3 text-center"
               style={{
-                border: "3px solid white ",
+                border: "1px solid #ffb703 ",
                 borderRadius: "15px",
-                backgroundColor: "rgb(0, 121, 169)",
+                backgroundColor: "#003D5B",
               }}
             >
               <Flip left>

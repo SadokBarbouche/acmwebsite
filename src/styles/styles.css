@@ -1,6 +1,6 @@
 #navbar {
   color: white;
-  background-color: #005a83;
+  background-color: #003d5b;
 }
 .navbaronscroll {
   transition: ease-in-out;
@@ -36,6 +36,8 @@ body {
 }
 .workshop:hover {
   transform: scale(1.004);
+  box-shadow: 5px 5px 5px 5px;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -60,8 +62,14 @@ body {
   border-radius: 15px;
   color:#fff;
   transition-duration: 0.5s;
+
 }
 .contact:hover {
   border: 2px solid #428bca;  
   opacity: 0.6;
+
+}
+
+.login{
+  color: white;
 }
