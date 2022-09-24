@@ -90,6 +90,7 @@ const Footer = () => {
                     className="mb-2"
                     as="textarea"
                     rows={3}
+                    
                   />
 
                   <Button

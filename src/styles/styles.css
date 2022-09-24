@@ -1,3 +1,12 @@
+.modal-content  {
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  border-radius: 10px !important; 
+  border: 2px solid #fff !important;
+  width: 80% !important;
+  margin:auto !important;
+}
+
 #navbar {
   color: white;
   background-color: #003d5b;
@@ -72,4 +81,8 @@ body {
 
 .login{
   color: white;
+}
+
+#signUpLogo{
+  border-right: 3px solid white;
 }
