@@ -59,7 +59,7 @@ const NavBar = () => {
               className="fw-bolder text-light fs-5 me-1"
             >
               <NavDropdown.Item className="py-3 fw-bolder" href="" style={{}}>
-                CP
+                Competetive Programming
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +157,7 @@ const NavBar = () => {
             </Form.Label>
 
             <Form.Group className="mb-2" controlId="formBasicEmail">
-              <Form.Control type="password" placeholder="Your password" />
+              <Form.Control type="password" placeholder="Your password"className="passwordNavBar" />
             </Form.Group>
           </Form>
         </Modal.Body>
