@@ -12,7 +12,7 @@ const SignUp = () => {
         minHeight: "100vh",
       }}
     >
-        <NavbarWhenConnected />
+        <NavbarWhenConnected username="nahnouha69" isRh="true" />
       <Container style={{}}>
         <Row className="py-5 ">
           <Col id="signUpLogo" className="d-none d-lg-block">
