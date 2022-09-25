@@ -78,7 +78,7 @@ const Settings = () => {
               <Form.Label className=" fw-bolder text-light">
                 Confirm your password
               </Form.Label>
-              <Form.Group className="mb-4 " controlId="">
+              <Form.Group  controlId="">
                 <Form.Control
                   type="password"
                   placeholder="Reenter your new password"
