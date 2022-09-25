@@ -12,7 +12,7 @@ const Settings = () => {
       <Container>
         <h2 className="display-1 fw-bolder">
           Settings
-          <span style={{float:"right"}}>
+          <span style={{ float: "right" }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
@@ -30,79 +30,99 @@ const Settings = () => {
         <hr />
         <Row>
           <Col>
-              <Form.Label className=" fw-bolder text-light">
-                First name
-              </Form.Label>
-              <Form.Group className="mb-4 " controlId="">
-                <Form.Control
-                  type="text"
-                  placeholder="Edit your first name"
-                  className=""
-                />
-              </Form.Group>
+            <Form.Label className=" fw-bolder text-light">
+              First name
+            </Form.Label>
+            <Form.Group className="mb-3 " controlId="">
+              <Form.Control
+                type="text"
+                placeholder="Edit your first name"
+                className=""
+              />
+            </Form.Group>
 
-              <Form.Label className=" fw-bolder text-light">
-                Last name
-              </Form.Label>
-              <Form.Group className="mb-4 " controlId="">
-                <Form.Control
-                  type="text"
-                  placeholder="Edit your last name"
-                  className=""
-                />
-              </Form.Group>
+            <Form.Label className=" fw-bolder text-light">Last name</Form.Label>
+            <Form.Group className="mb-3 " controlId="">
+              <Form.Control
+                type="text"
+                placeholder="Edit your last name"
+                className=""
+              />
+            </Form.Group>
+            <Form.Label className=" fw-bolder text-light">Email</Form.Label>
+            <Form.Group className="mb-3 " controlId="">
+              <Form.Control
+                type="text"
+                placeholder="Edit your email"
+                className=""
+              />
+            </Form.Group>
 
-              <Form.Label className=" fw-bolder text-light">
-                Email
-              </Form.Label>
-              <Form.Group className="mb-4 " controlId="">
-                <Form.Control
-                  type="text"
-                  placeholder="Edit your last email"
-                  className=""
-                />
-              </Form.Group>
+            <Form.Label className=" fw-bolder text-light">
+              Enter your new password
+            </Form.Label>
+            <Form.Group className="mb-3 " controlId="">
+              <Form.Control
+                type="password"
+                placeholder="Enter your new password"
+                className=""
+              />
+            </Form.Group>
 
+            <Form.Label className=" fw-bolder text-light">
+              Confirm your new password
+            </Form.Label>
+            <Form.Group className="mb-3" controlId="">
+              <Form.Control
+                type="password"
+                className=""
+                placeholder="Confirm your new password"
+              />
+            </Form.Group>
 
-              <Form.Label className=" fw-bolder text-light">
-                Change your password
-              </Form.Label>
-              <Form.Group className="mb-4 " controlId="">
-                <Form.Control
-                  type="password"
-                  placeholder="Change your password"
-                  className=""
-                />
-              </Form.Group>
-
-              <Form.Label className=" fw-bolder text-light">
-                Confirm your password
-              </Form.Label>
-              <Form.Group 
-                  className="mb-4"
+            <Form.Label className=" fw-bolder text-light">
+              To verifiy your identity, enter your old password
               
-              controlId="">
-                <Form.Control
-                  type="password"
-                  className=""
-                  placeholder="Reenter your new password"
-                />
-              </Form.Group>
-              <Button
-            className="mb-4 fs-5 fw-bolder w-100 mt-4 "
-            style={{ color: "#003d5b",border:"none", backgroundColor: "#ffb703" }}
-          >
-            Save
-          </Button>
+            </Form.Label>
+            <span style={{float:"right",marginBottom:"10px"}}>
+                <svg
+                
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-exclamation-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                </svg>
+              </span>
+            <Form.Group className="mb-3" controlId="">
+              <Form.Control
+                type="password"
+                className=""
+                placeholder="Enter your old password"
+              />
+            </Form.Group>
+
+            <Button
+              className="mb-4 fs-5 fw-bolder w-100 mt-4 "
+              style={{
+                color: "#003d5b",
+                border: "none",
+                backgroundColor: "#ffb703",
+              }}
+            >
+              Save
+            </Button>
           </Col>
           <Col className="d-none d-md-block">
-              <Image src={Logo} fluid style={{ marginTop: "-40px" }} />
+            <Image src={Logo} fluid style={{ marginTop: "-40px" }} />
           </Col>
         </Row>
         <hr />
-        <div className="text-center">
-         
-        </div>
+        <div className="text-center"></div>
       </Container>
     </div>
   );
