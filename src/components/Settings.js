@@ -78,13 +78,22 @@ const Settings = () => {
               <Form.Label className=" fw-bolder text-light">
                 Confirm your password
               </Form.Label>
-              <Form.Group  controlId="">
+              <Form.Group 
+                  className="mb-4"
+              
+              controlId="">
                 <Form.Control
                   type="password"
-                  placeholder="Reenter your new password"
                   className=""
+                  placeholder="Reenter your new password"
                 />
               </Form.Group>
+              <Button
+            className="mb-4 fs-5 fw-bolder w-100 mt-4 "
+            style={{ color: "#003d5b",border:"none", backgroundColor: "#ffb703" }}
+          >
+            Save
+          </Button>
           </Col>
           <Col className="d-none d-md-block">
               <Image src={Logo} fluid style={{ marginTop: "-40px" }} />
@@ -92,12 +101,7 @@ const Settings = () => {
         </Row>
         <hr />
         <div className="text-center">
-          <Button
-            className="mb-4 w-25 fs-5 fw-bolder "
-            style={{ color: "#003d5b", backgroundColor: "#ffb703" }}
-          >
-            Save
-          </Button>
+         
         </div>
       </Container>
     </div>
