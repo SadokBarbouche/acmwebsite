@@ -8,13 +8,14 @@ const FirstDiv = () => {
   return (
     <>
       <div
+      id="homepage"
         style={{
           height:"75vh",
           backgroundColor: "#003d5b",
         }}
       >
 
-        <Container className="">
+        <Container >
           <Row>
             <Col>
               <Fade left>

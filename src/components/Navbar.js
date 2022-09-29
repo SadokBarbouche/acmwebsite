@@ -9,7 +9,7 @@ import {
   Image,
   Form,
 } from "react-bootstrap";
-
+import { Link } from "react-scroll";
 import Logo from "../assets/acm-logo.png";
 import "../styles/styles.css";
 
@@ -34,9 +34,13 @@ const NavBar = () => {
   const handleShow = () => setShow(true);
 
   return (
-    <Navbar id="navbar" collapseOnSelect sticky="top" expand="xxl">
+    <Navbar id="navbar"  collapseOnSelect sticky="top" expand="xxl">
       <Container className="text-light">
-        <Navbar.Brand className="fs-3 fw-bolder text-dark" href="">
+        <Navbar.Brand
+          className="fs-3 fw-bolder text-dark"
+          href=""
+          onClick={() => document.getElementById("homepage").scrollIntoView()}
+        >
           <Image
             fluid
             style={{ maxHeight: "100px" }}
@@ -47,19 +51,37 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="text-end">
           <Nav className="m-auto">
-            <Nav.Link href="" className="fw-bolder text-light fs-5 me-1">
+            <Nav.Link
+              onClick={() =>
+                document.getElementById("homepage").scrollIntoView()
+              }
+              className="fw-bolder text-light fs-5 me-1"
+            >
               About us
             </Nav.Link>
-            <Nav.Link href="" className="fw-bolder text-light fs-5 me-1">
+            <Nav.Link
+              onClick={() => document.getElementById("posts").scrollIntoView()}
+              href=""
+              className="fw-bolder text-light fs-5 me-1"
+            >
               Posts
             </Nav.Link>
             <NavDropdown
-              title={<span className=" text-light fs-5 me-1">Workshops</span>}
+              title={
+                <span
+                  className=" text-light fs-5 me-1"
+                  onClick={() =>
+                    document.getElementById("workshops").scrollIntoView()
+                  }
+                >
+                  Workshops
+                </span>
+              }
               id="collasible-nav-dropdown"
               className="fw-bolder text-light fs-5 me-1"
             >
-              <NavDropdown.Item className="py-3 fw-bolder" href="" style={{}}>
-                Competetive Programming
+              <NavDropdown.Item className="py-3 " href="" style={{}}>
+                CP
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -92,8 +114,18 @@ const NavBar = () => {
                 </span>
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link className="fw-bolder text-light fs-5">Team</Nav.Link>
-            <Nav.Link href="" className="fw-bolder text-light fs-5">
+            <Nav.Link
+              onClick={() => document.getElementById("team").scrollIntoView()}
+              className="fw-bolder text-light fs-5"
+            >
+              Team
+            </Nav.Link>
+            <Nav.Link
+              onClick={() =>
+                document.getElementById("contactus").scrollIntoView()
+              }
+              className="fw-bolder text-light fs-5"
+            >
               Contact us
             </Nav.Link>
             <Nav.Link href="" className="fw-bolder text-light fs-5 me-1">
@@ -131,12 +163,7 @@ const NavBar = () => {
           </Nav>
         </Navbar.Collapse>
       </Container>
-      <Modal
-        className="loginModal"
-        centered
-        show={show}
-        onHide={handleClose}
-      >
+      <Modal className="loginModal" centered show={show} onHide={handleClose}>
         <Modal.Header
           style={{
             backgroundColor: "#003d5b",
@@ -150,14 +177,22 @@ const NavBar = () => {
           <Form>
             <Form.Label className="fs-5 fw-bolder text-light">Email</Form.Label>
             <Form.Group className="mb-4" controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Your email" className="emailNavBar" />
+              <Form.Control
+                type="email"
+                placeholder="Your email"
+                className="emailNavBar"
+              />
             </Form.Group>
             <Form.Label className="fs-5 fw-bolder text-light">
               Password
             </Form.Label>
 
             <Form.Group className="mb-2" controlId="formBasicEmail">
-              <Form.Control type="password" placeholder="Your password"className="passwordNavBar" />
+              <Form.Control
+                type="password"
+                placeholder="Your password"
+                className="passwordNavBar"
+              />
             </Form.Group>
           </Form>
         </Modal.Body>

@@ -17,7 +17,9 @@ const ThirdDiv = () => {
       </svg>
       <Container className="text-center">
         <Slide left>
-          <p className="display-1 text-center fw-bolder text-light mb-2">
+          <p 
+          id="workshops"
+          className="display-1 text-center fw-bolder text-light mb-2">
             Our Workshops
           </p>
           <p

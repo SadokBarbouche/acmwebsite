@@ -30,9 +30,19 @@ const NavbarWhenConnected = (props) => {
     };
   }, []);
   return (
-    <Navbar id="navbar" collapseOnSelect sticky="top" expand="xxl">
+    <Navbar
+      id="navbar"
+      collapseOnSelect
+      sticky="top"
+      expand="xxl"
+      
+    >
       <Container className="text-light">
-        <Navbar.Brand className="fs-3 fw-bolder text-dark" href="">
+        <Navbar.Brand
+          onClick={() => document.getElementById("homepage").scrollIntoView()}
+          className="fs-3 fw-bolder text-dark"
+          href=""
+        >
           <Image
             fluid
             style={{ maxHeight: "100px" }}
@@ -43,28 +53,52 @@ const NavbarWhenConnected = (props) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="text-end">
           <Nav className="m-auto">
-            <Nav.Link href="" className="fw-bolder text-light fs-5 me-1">
+            <Nav.Link
+              onClick={() =>
+                document.getElementById("homepage").scrollIntoView()
+              }
+              href=""
+              className="fw-bolder text-light fs-5 me-1"
+            >
               About us
             </Nav.Link>
-            <Nav.Link href="" className="fw-bolder text-light fs-5 me-1">
+            <Nav.Link
+              href=""
+              onClick={() => document.getElementById("posts").scrollIntoView()}
+              className="fw-bolder text-light fs-5 me-1"
+            >
               Posts
             </Nav.Link>
             <NavDropdown
-              title={<span className="w-100 text-light fs-5 me-1">Workshops</span>}
+              onClick={() =>
+                document.getElementById("workshops").scrollIntoView()
+              }
+              title={
+                <span className="w-100 text-light fs-5 me-1">Workshops</span>
+              }
               id="collasible-nav-dropdown"
               className="fw-bolder text-light fs-5 me-1"
             >
               <NavDropdown.Item className="py-3 " href="" style={{}}>
-              Competetive Programming
-                
+                Competetive Programming
               </NavDropdown.Item>
               <NavDropdown.Item className="py-3" href="">
                 Cloud Computing
-                
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link className="fw-bolder text-light fs-5">Team</Nav.Link>
-            <Nav.Link href="" className="fw-bolder text-light fs-5">
+            <Nav.Link
+              className="fw-bolder text-light fs-5"
+              onClick={() => document.getElementById("team").scrollIntoView()}
+            >
+              Team
+            </Nav.Link>
+            <Nav.Link
+              onClick={() =>
+                document.getElementById("contactus").scrollIntoView()
+              }
+              href=""
+              className="fw-bolder text-light fs-5"
+            >
               Contact us
             </Nav.Link>
             <Nav.Link href="" className="fw-bolder text-light fs-5 me-1">
@@ -103,16 +137,21 @@ const NavbarWhenConnected = (props) => {
                     <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
                   </svg>
                 </NavDropdown.Item>
-                <NavDropdown.Item className="py-3" href="" 
-                    style={{ float: "right", marginTop: "5px",display:(props.isRh==true ? "" : "none") }}
-                
+                <NavDropdown.Item
+                  className="py-3"
+                  href=""
+                  style={{
+                    float: "right",
+                    marginTop: "5px",
+                    display: props.isRh == true ? "" : "none",
+                  }}
                 >
                   Dashboard
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
-                    style={{float:"right",marginTop:"5px"}}
+                    style={{ float: "right", marginTop: "5px" }}
                     fill="currentColor"
                     class="bi bi-clipboard-check"
                     viewBox="0 0 16 16"

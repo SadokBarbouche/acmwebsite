@@ -1,8 +1,16 @@
+
+*{
+  -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+  display: none;
+  }
+  
 .modal-content  {
   -webkit-border-radius: 20px !important;
   -moz-border-radius: 20px !important;
   border-radius: 10px !important; 
-  border: 2px solid #fff !important;
+  border: 3px solid #fff !important;
   width: 80% !important;
   margin:auto !important;
 }

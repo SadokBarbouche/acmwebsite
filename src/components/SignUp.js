@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, Form, Col, Container, Row, Image } from "react-bootstrap";
 import Logo from "../assets/acm-logo.png";
-import "../styles/styles.css";
 import Footer from "./Footer";
 import NavbarWhenConnected from "./NavbarWhenConnected";
+import "../styles/styles.css";
 const SignUp = () => {
   return (
     <div

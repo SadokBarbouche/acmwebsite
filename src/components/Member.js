@@ -10,7 +10,7 @@ const Member = (props) => {
     <Col md={4} sm={12}>
       <Slide bottom>
         <Image
-          className="board"
+          className="board w-75"
           fluid
           src={props.person}
           style={{ border: "4px solid #ffb703", borderRadius: "30px" }}
@@ -24,10 +24,14 @@ const Member = (props) => {
           }}
         >
           <a href={props.fb} target="blank" style={{ textDecoration: "none" }}>
-            <Image src={facebook} style={{ margin: "2px",color:"" }} />{" "}
+            <Image src={facebook} style={{ margin: "2px", color: "" }} />{" "}
           </a>
-          <a href={props.linkedin} target="blank" style={{ textDecoration: "none" }}>
-            <Image src={linkedin} style={{ margin: "2px" }}  className="ms-1"/>
+          <a
+            href={props.linkedin}
+            target="blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Image src={linkedin} style={{ margin: "2px" }} className="ms-1" />
           </a>
         </div>
       </Slide>

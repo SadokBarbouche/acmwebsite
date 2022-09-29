@@ -14,17 +14,20 @@ const Memeber = (props) => {
         <td>{props.email}</td>
         <td>
           <Form.Select aria-label="Default select example">
-            <option value="1">Paid</option>
+            <option value="1">Verified</option>
             <option value="2">Pending</option>
-            <option value="3">Canceled</option>
           </Form.Select>
         </td>
         <td>
           <Form.Select aria-label="Default select example">
-            <option value="1">Very active</option>
-            <option value="2">Active</option>
-            <option value="3">Inactive</option>
+            <option value="1">Active</option>
+            <option value="2">Inactive</option>
           </Form.Select>
+        </td>
+        <td>
+          <p className="" style={{}}>
+            {props.date}
+          </p>
         </td>
       </tr>
     </>
@@ -40,7 +43,10 @@ const HrDashboard = () => {
         <div className="text-center">
           <Image src={Logo} fluid style={{ height: "150px" }} />
         </div>
-        <h1 className="display-1 text-center mb-5 fw-bold text-light" style={{marginTop:"-25px"}}>
+        <h1
+          className="display-1 text-center mb-5 fw-bold text-light"
+          style={{ marginTop: "-25px" }}
+        >
           Dashboard
         </h1>
         <Table className="text-light" responsive="sm">
@@ -52,8 +58,10 @@ const HrDashboard = () => {
               <th>Username</th>
               <th>Email</th>
 
-              <th>Payment Status</th>
+              <th>Is verified</th>
               <th>Activity Status</th>
+              <th>Created at</th>
+
             </tr>
           </thead>
           <tbody>
@@ -63,12 +71,14 @@ const HrDashboard = () => {
               lastname="Bouali"
               email="nahnouha@gmail.com"
               username="nahnouha"
+              date="14/03/2001"
             />
             <Memeber
               id="2"
               firstname="Sadok"
               lastname="Barbouche"
               username="barbex"
+              date="14/03/2001"
               email="bribesh1234@gmail.com"
             />
           </tbody>
@@ -120,7 +130,7 @@ const HrDashboard = () => {
               <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z" />
             </svg>
           </Button>
-        </div>
+    </div>
       </Container>
     </div>
   );

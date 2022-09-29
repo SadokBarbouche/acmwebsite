@@ -15,7 +15,9 @@ import "../styles/styles.css";
 import "swiper/css/autoplay";
 const SecondDiv = () => {
   return (
-    <div style={{ backgroundColor: "#035294" }}>
+    <div
+    
+    style={{ backgroundColor: "#035294" }}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#003d5b"
@@ -29,7 +31,7 @@ const SecondDiv = () => {
           <h1 className="text-light text-center display-1 fw-bolder ">
             Our activities
           </h1>
-          <h2 className="text-center fs-5 mt-4 mb-5" style={{ color: "#ccc" }}>
+          <h2 id="posts" className="text-center fs-5 mt-4 mb-5" style={{ color: "#ccc" }}>
             <span className="fw-bolder fs-4">ACM INSAT STUDENT CHAPTER</span>{" "}
             takes events to a whole new level. <br />
             <span className="fw-bolder fs-3">Join us</span> and be part of the
