@@ -6,7 +6,7 @@ import { Fade, Slide } from "react-reveal";
 const Settings = () => {
   return (
     <div
-      style={{ minHeight: "100vh", backgroundColor: "#003d5b" }}
+      style={{ minHeight: window.screen.availHeight, backgroundColor: "#003d5b" }}
       className="text-light"
     >
       <Container>
